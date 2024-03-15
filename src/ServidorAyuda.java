@@ -52,8 +52,21 @@ public class ServidorAyuda {
                     enviarMensaje(socket, "¡" + nombreCliente + " ha entrado al chat!", cliente.getAddress(), cliente.getPort());
                 }
             } else {
+                // Desencriptar el mensaje recibido antes de enviarlo a los demás clientes
+                String mensajeDesencriptado = Encriptador.desencriptarMensaje(message);
+
+                String nombreRemitente = obtenerNombreCliente(address, port, clientesConectados);
+
+                LocalDateTime horaActual = LocalDateTime.now();
+                DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss");
+                String horaEnvio = horaActual.format(formatoHora);
+
+                String mensajeServidor = nombreRemitente + " (" + horaEnvio + "): " + message;
+
+                System.out.println("Mensaje cifrado recibido de " + mensajeServidor);
+
                 // Enviar el mensaje a todos los clientes conectados
-                String mensajeConInfo = obtenerMensajeConInformacion(message, obtenerNombreCliente(address, port, clientesConectados));
+                String mensajeConInfo = obtenerMensajeConInformacion(mensajeDesencriptado, obtenerNombreCliente(address, port, clientesConectados));
                 for (ClienteInfo cliente : clientesConectados) {
                     enviarMensaje(socket, mensajeConInfo, cliente.getAddress(), cliente.getPort());
                 }

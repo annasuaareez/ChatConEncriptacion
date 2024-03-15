@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b059e337-86de-446e-904d-fda8654ac94c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PracticaEncriptacion.iml" afterDir="false" />
+    <list default="true" id="b059e337-86de-446e-904d-fda8654ac94c" name="Changes" comment="Practica chat sin encriptar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClienteUDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClienteUDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServidorAyuda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServidorAyuda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +30,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ClienteUDP.executor": "Run",
+    "Application.ServidorUDP.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -51,6 +50,15 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Cliente" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ClienteUDP" />
+      <module name="PracticaEncriptacion" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,8 +74,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710505023634</updated>
-      <workItem from="1710505025322" duration="650000" />
+      <workItem from="1710505025322" duration="1624000" />
     </task>
+    <task id="LOCAL-00001" summary="Practica chat sin encriptar">
+      <option name="closed" value="true" />
+      <created>1710506156040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710506156040</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Practica chat sin encriptar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practica chat sin encriptar" />
   </component>
 </project>

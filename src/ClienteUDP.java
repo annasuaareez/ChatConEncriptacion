@@ -48,7 +48,9 @@ public class ClienteUDP {
                         System.out.println("El archivo especificado no existe.");
                     }
                 } else {
-                    ClienteAyuda.enviarMensaje(socket, input, serverAddress, SERVER_PORT);
+                    // Encriptar el mensaje antes de enviarlo
+                    String mensajeEncriptado = Encriptador.encriptarMensaje(input);
+                    ClienteAyuda.enviarMensaje(socket, mensajeEncriptado, serverAddress, SERVER_PORT);
                 }
             }
         } catch (IOException e) {
